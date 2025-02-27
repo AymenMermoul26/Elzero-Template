@@ -1,0 +1,43 @@
+/* Start necessary Style  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Var   */
+:root {
+    --main-clr: #2196f3;
+    --gray-clr: #ececec;
+    --gray-clr: #bdbdbd6b;
+    --padding-: 100px;
+    --transition-time: .4s;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Font  */
+@font-face {
+    font-family: "Cairo";
+    src: url(../assits/font/Cairo-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    font-family: "Cairo";
+}
+
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* End necessary Style  */
