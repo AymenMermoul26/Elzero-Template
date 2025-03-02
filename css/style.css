@@ -116,10 +116,10 @@ header .container .logo{
     width: 100%;
     }
 }
-header .container ul {
+header .container> ul {
     display: flex;
 }
-header .container ul> li> a {
+header .container> ul> li> a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -131,11 +131,41 @@ header .container ul> li> a {
     transition: var(--transition-time);
     overflow: hidden;
 }
+
+header .container >ul >li .other-links {
+    position: absolute;
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    border-bottom: 3px solid var(--main-clr);
+    gap: 30px;
+    
+    align-items: center;
+}
+header .container >ul >li .other-links .image {
+    flex-basis: 45%;
+}
+@media (max-width:991px){
+    header .container >ul >li .other-links img {
+        display: none;
+    }
+}
+header .container >ul >li .other-links ul {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+}
+header .container >ul >li .other-links > ul a {
+
+}
 header .container ul> li> a:hover {
     background-color: #f3f3f375;
     color: var(--main-clr);
 }
-header .container ul> li> a::before { 
+header .container >ul> li> a::before { 
     content: '';
     position: absolute;
     width: 100%;
@@ -145,7 +175,7 @@ header .container ul> li> a::before {
     left: -100%;
     transition: var(--transition-time);
 }
-header .container ul> li> a:hover::before {
+header .container >ul> li> a:hover::before {
     left: 0;
 }
 @media (max-width:767px){
