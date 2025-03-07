@@ -131,35 +131,34 @@ header .container> ul> li> a {
     transition: var(--transition-time);
     overflow: hidden;
 }
-
-header .container >ul >li .other-links {
+header .container ul>li>.mega-menu {
     position: absolute;
-    background-color: #fff;
-    padding: 30px;
-    width: 100%;
+    z-index: 1;
     left: 0;
-    z-index: 2;
+    background-color: #fff;
     display: flex;
-    border-bottom: 3px solid var(--main-clr);
-    gap: 30px;
-    
-    align-items: center;
+    width: 100%;
+    padding: 30px;
+    gap: 40px;
+    border-bottom: 4px solid var(--main-clr);
 }
-header .container >ul >li .other-links .image {
-    flex-basis: 45%;
+header .container ul>li>.mega-menu .links {
+    width: 250px;
+    flex: 1;
 }
-@media (max-width:991px){
-    header .container >ul >li .other-links img {
-        display: none;
-    }
+header .container ul>li>.mega-menu .links li {
+    border-bottom: 1px solid #ececec;
 }
-header .container >ul >li .other-links ul {
-    display: flex;
-    flex-direction: column;
+header .container ul>li>.mega-menu .links li a{
     text-transform: capitalize;
+    display: block;
+    padding: 15px;
+    color: var(--main-clr);
+    font-weight: 700;
+    font-size: 18px;
 }
-header .container >ul >li .other-links > ul a {
-
+header .container .mega-menu .links li >a i {
+    margin-right: 10px;
 }
 header .container ul> li> a:hover {
     background-color: #f3f3f375;
