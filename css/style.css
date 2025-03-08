@@ -140,7 +140,7 @@ header .container ul>li>.mega-menu {
     width: 100%;
     padding: 30px;
     gap: 40px;
-    border-bottom: 4px solid var(--main-clr);
+    border-bottom: 2px solid var(--main-clr);
 }
 header .container ul>li>.mega-menu .links {
     width: 250px;
