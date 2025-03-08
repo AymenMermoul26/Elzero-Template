@@ -116,10 +116,10 @@ header .container .logo{
     width: 100%;
     }
 }
-header .container> ul {
+header .container .nav-link {
     display: flex;
 }
-header .container> ul> li> a {
+header .container .nav-link> li> a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -131,36 +131,7 @@ header .container> ul> li> a {
     transition: var(--transition-time);
     overflow: hidden;
 }
-header .container ul>li>.mega-menu {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    background-color: #fff;
-    display: flex;
-    width: 100%;
-    padding: 30px;
-    gap: 40px;
-    border-bottom: 2px solid var(--main-clr);
-}
-header .container ul>li>.mega-menu .links {
-    width: 250px;
-    flex: 1;
-}
-header .container ul>li>.mega-menu .links li {
-    border-bottom: 1px solid #ececec;
-}
-header .container ul>li>.mega-menu .links li a{
-    text-transform: capitalize;
-    display: block;
-    padding: 15px;
-    color: var(--main-clr);
-    font-weight: 700;
-    font-size: 18px;
-}
-header .container .mega-menu .links li >a i {
-    margin-right: 10px;
-}
-header .container ul> li> a:hover {
+header .container .nav-link li> a:hover {
     background-color: #f3f3f375;
     color: var(--main-clr);
 }
@@ -177,12 +148,12 @@ header .container >ul> li> a::before {
 header .container >ul> li> a:hover::before {
     left: 0;
 }
-@media (max-width:767px){
-    header .container ul >li >a{
-        font-size: 14px;
-        padding: 10px;
-        height: 40px;
-    }
+@media (max-width: 767px) {
+  header .container .nav-link> li> a {
+    font-size: 15px;
+    height: 40px;
+    padding: 10px;
+  }
 }
 
 /* End Header Style  */
