@@ -131,11 +131,12 @@ header .container .nav-link> li> a {
     transition: var(--transition-time);
     overflow: hidden;
 }
+
 header .container .nav-link li> a:hover {
     background-color: #f3f3f375;
     color: var(--main-clr);
 }
-header .container >ul> li> a::before { 
+header .container .nav-link> li> a::before { 
     content: '';
     position: absolute;
     width: 100%;
@@ -145,7 +146,7 @@ header .container >ul> li> a::before {
     left: -100%;
     transition: var(--transition-time);
 }
-header .container >ul> li> a:hover::before {
+header .container .nav-link> li> a:hover::before {
     left: 0;
 }
 @media (max-width: 767px) {
@@ -154,6 +155,74 @@ header .container >ul> li> a:hover::before {
     height: 40px;
     padding: 10px;
   }
+}
+
+header .mega-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index:-1;
+    background-color: #fff;
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    top: calc(100% + 60px);
+    transition: top var(--transition-time), opacity var(--transition-time);
+    border-bottom: 3px solid var(--main-clr);
+    opacity: 0;
+}
+@media(max-width:766px){
+    header .mega-menu{
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+} 
+header .mega-menu .image img {
+    max-width: 100%;
+}
+@media(max-width:991px){
+    header .mega-menu .image img {
+        display: none;
+    }
+}
+header .mega-menu .links {
+    min-width: 250px;
+    flex: 1;
+}
+
+header .mega-menu .links li {
+    position: relative;
+    border-bottom: 1px solid #ececec;
+}
+header .mega-menu .links li::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 0;
+    background-color: #fafafa;
+    transition: var(--transition-time);
+}
+header .mega-menu .links li:hover::before {
+    width: 100%;
+}
+header .mega-menu .links li a {
+    color: var(--main-clr);
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+}
+header .mega-menu .links li i {
+    margin-right: 10px;
+}
+header .container .nav-link > li:hover .mega-menu{
+    opacity: 1;
+    top: calc(100% + 1px);
+    z-index: 100;
 }
 
 /* End Header Style  */
