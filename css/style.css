@@ -485,7 +485,6 @@ section.gallery .container .gall-box .image-box{
 section.gallery .container .image-box::before {
     content: '';
     position: absolute;
-    height: 10%;
     width: 0%;
     height: 0%;
     opacity: 0;
@@ -494,10 +493,9 @@ section.gallery .container .image-box::before {
     transform: translate(-50%, -50%);
     z-index: 2;
     background-color: #eeeeee25;
-    transform: scale(0);
 }
 section.gallery .container .image-box:hover::before {
-    animation: backgroun-scal var(--transition-time);
+    animation: backgroun-scal 1s;
 }
 section.gallery .container .image-box img {
    max-width: 100%;
