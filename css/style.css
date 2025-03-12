@@ -625,33 +625,38 @@ section.features .container .box a {
     font-size: 20px;
     text-transform: capitalize;
     font-weight: bold;
-    border: 3px solid;
+   
     padding: 10px 25px;
     border-radius: 6px;
     transition: var(--transition-time);
 }
 section.features  .quality a {
+    border: 3px solid #f44036;
     color: #f44036;
-    border-color: #f44036;
     background-image: linear-gradient(to right, #f44036 50%, white 50%);
     background-size: 200px 200px;
     background-position: right bottom;
 }
 
+
 section.features .container .time a {
+    border: 3px solid #009688;
     color: #009688;
-    border-color: #009688;
     background-image: linear-gradient(to right, #009688 50%, white 50%);
     background-size: 200px 200px;
     background-position: right bottom;
 }
+
 section.features .container .passion a {
+    border: 3px solid #03a9f4;
     color: #03a9f4;
-    border-color: #03a9f4;
     background-image: linear-gradient(to right, #03a9f4 50%, white 50%);
     background-size: 200px 200px;
     background-position: right bottom;
 }
-
+section.features .box:hover a {
+    background-position: bottom left;
+    color: #fff;
+}
 
 /* End Featur Section */
