@@ -706,4 +706,75 @@ section.testimonials .box p {
     line-height: 1.5;
     color: #777;
 }
+/* Start Team Members Section  */
+section.team-members .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+section.team-members .container .box {
+    position: relative;
+}
 
+section.team-members .container .box::after,section.team-members .container .box::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100% - 60px);
+    height: 100%;
+
+    z-index: -1;
+    border-radius: 10px;
+}
+section.team-members .container .box::before {
+    background-color: #f3f3f3;
+}
+section.team-members .container .box::after {
+        width: 0;
+        background-color: #d7d7d7;
+        transition: var(--transition-time);
+}
+section.team-members .box:hover .box::after {
+    width: 100%;
+}
+section.team-members .box .data {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+}
+section.team-members .box .data img {
+    width: calc(100% - 60px);
+    border-radius: 10px;
+}
+section.team-members .box .data .icons {
+    width: 60px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+section.team-members .box .data .icons i {
+width: 60px;
+    color: #ababab;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.team-members .container .info {
+    padding-left: 80px;
+}
+section.team-members .container .info h2 {
+    text-transform: capitalize;
+    margin-top: 15px;
+    color: var(--main-clr);
+}
+section.team-members .container .info p {
+    margin: 10px 0 25px;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+/* End Team Members Section  */
