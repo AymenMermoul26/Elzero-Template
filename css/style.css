@@ -11,7 +11,7 @@
 :root {
     --main-clr: #2196f3;
     --gray-clr: #ececec;
-    --gray-clr: #bdbdbd6b;
+    --gray-clr2: #bdbdbd6b;
     --padding-: 100px;
     --transition-time: .4s;
 
@@ -658,5 +658,52 @@ section.features .box:hover a {
     background-position: bottom left;
     color: #fff;
 }
-
 /* End Featur Section */
+
+section.testimonials {
+    background-color: var(--gray-clr);
+}
+section.testimonials .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+section.testimonials .container .box {
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: -1px 2px 4px 1px #cdcdcd;
+}
+
+section.testimonials  .box img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid var(--gray-clr);
+    top: -50px;
+    right: -10px;
+}
+section.testimonials .box h2 {
+    width: fit-content;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+section.testimonials .box span {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    display: block;
+    color: #777;
+}
+section.testimonials .box .yellow-clr {
+color: #ffc107;
+;
+}
+section.testimonials .box p {
+    margin-top: 15px;
+    line-height: 1.5;
+    color: #777;
+}
+
