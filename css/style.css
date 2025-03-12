@@ -536,7 +536,7 @@ section.features .container .quality .image::before{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #f440365e;
+    background-color: #f43f3695;
     top: 0;
     left: 0;
 }   section.features .container .time .image::before{
@@ -544,7 +544,7 @@ section.features .container .quality .image::before{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #0096878a;
+    background-color: #00968794;
     top: 0;
     left: 0;
 }   section.features .container .passion .image::before{
@@ -552,7 +552,7 @@ section.features .container .quality .image::before{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #03a8f476;
+    background-color: #03a8f492;
     top: 0;
     left: 0;
 }   
@@ -565,7 +565,7 @@ section.features .container .box .image::after {
     border: solid;
     border-width: 0 0 200px 500px;
     border-color: transparent transparent white transparent;
-    transition: .2s;
+    transition: var(--transition-time);
 }
 section.features .container .box:hover .image::after {
     border-width: 0 500px 190px 0;
@@ -617,25 +617,40 @@ section.features .container .box p {
     line-height: 2;
     margin: 30px 0;
 }
+
 section.features .container .box a {
     margin: 0 auto 30px;
     display: block;
     width: fit-content;
-    font-size: 25px;
+    font-size: 20px;
     text-transform: capitalize;
     font-weight: bold;
     border: 3px solid;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 6px;
+    transition: var(--transition-time);
 }
-section.features .container .quality a {
+section.features  .quality a {
+    color: #f44036;
+    border-color: #f44036;
+    background-image: linear-gradient(to right, #f44036 50%, white 50%);
+    background-size: 200px 200px;
+    background-position: right bottom;
+}
 
-}
 section.features .container .time a {
-
+    color: #009688;
+    border-color: #009688;
+    background-image: linear-gradient(to right, #009688 50%, white 50%);
+    background-size: 200px 200px;
+    background-position: right bottom;
 }
 section.features .container .passion a {
-
+    color: #03a9f4;
+    border-color: #03a9f4;
+    background-image: linear-gradient(to right, #03a9f4 50%, white 50%);
+    background-size: 200px 200px;
+    background-position: right bottom;
 }
 
 
