@@ -791,3 +791,87 @@ section.team-members .container .info p {
 }
 
 /* End Team Members Section  */
+/* Start Services Section  */
+section.services {
+    background-color: var(--gray-clr);
+}
+section.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+section.services .container .box {
+    counter-increment: section;
+    text-align: center;
+    box-shadow: -1px 4px 11px 0px #cdcdcd;
+    padding: 25px 0 0 0;
+    background-color: #fff;
+    position: relative;
+    transition: transform var(--transition-time);
+}
+section.services .container .box:hover {
+    transform: translateY(-10px);
+}
+section.services .container .box::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: var(--main-clr);
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--transition-time);
+}
+section.services .container .box:hover::before {
+    width: 100%;
+}
+section.services .container .box i {
+    font-size: 60px;
+    color: var(--gray-clr2);
+}
+section.services .container .box h2 {
+    text-transform: capitalize;
+    margin: 20px 0 40px 0;
+    color: var(--main-clr);
+}
+section.services .container .box .info {
+    position: relative;
+    padding: 15px;
+    background-color: var(--gray-clr);
+    text-align: right;
+}
+section.services .container .box .info::before {
+    content: "0" counter(section);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    background-color: var(--main-clr);
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+section.services .container .box .info::after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 100%;
+    background-color: #d4d4d4;
+    top: 0;
+    left: 75px;
+    transform: skewX(-35deg);
+}
+section.services .container .box .info a {
+    text-transform: capitalize;
+    color: var(--main-clr);
+}
+/* End Services Section  */
+
+
+
