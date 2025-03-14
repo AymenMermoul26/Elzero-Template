@@ -872,6 +872,55 @@ section.services .container .box .info a {
     color: var(--main-clr);
 }
 /* End Services Section  */
+/* Start Our-Skills Section  */
+section.our-skills .container {
+    display: flex;
+    align-items: center;
+}
+@media (max-width:991px){
+    section.our-skills .container .image {
+        display: none;
+    }
+}
+section.our-skills .container .skills-box {
+    flex:1;
+}
+section.our-skills .container .skills-box .box {
+   margin-bottom: 20px;
+}
+section.our-skills .container .skills-box .box h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+section.our-skills .container .skills-box .box .skill  {
+    width: 100%;
+    background-color: var(--gray-clr);
+    height: 35px;
+}
+section.our-skills .container .skills-box .box .skill span {
+    position: relative;
+    display: block;
+    height: 100%;
+    background-color: var(--main-clr);
+}
+section.our-skills .container .skills-box .box .skill span::before {
+        content: attr(precent);
+        position: absolute;
+        right: 0;
+        top: -35px;
+        border: 1px solid #999;
+        height: 12px;
+        width: 21px;
+        font-weight: bold;
+        font-size: 11px;
+        padding: 3px;
+        border-radius: 5px;
+        color: var(--main-clr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 
+ /* End Our-Skills Section  */
 
 
