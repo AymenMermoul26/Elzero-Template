@@ -1245,3 +1245,75 @@ section.events .container .subscibe form input[type='submit']:hover {
     color: #fff;
   }
  /* End Pricing Section  */
+
+ /* Start Our Stats Section  */
+ section.our-stats {
+    position: relative;
+    background-image: url(../assits/imgs/stats.jpg);
+    background-size: cover;
+    min-height: 300px;
+    z-index: 1;
+ }
+ section.our-stats::before {
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fdfdfde3;
+    z-index: -2;
+ }
+ section.our-stats h1 {
+    width: fit-content;
+    margin: 0 auto 50px;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+ section.our-stats .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+ }
+ section.our-stats .container .box {
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 15px;
+    transition: var(--transition-time);
+ }
+ section.our-stats .container .box::before,section.our-stats .container .box::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 0;
+    background: var(--main-clr);
+    transition: 1s;
+ }
+ section.our-stats .container .box::before {
+    top: 0;
+    left: 0;
+ }
+ section.our-stats .container .box::after {
+    bottom: 0;
+    right: 0;
+ }
+ section.our-stats .container .box:hover:before,section.our-stats .container .box:hover:after {
+    height: 100%;
+ }
+ section.our-stats .box .fa-solid {
+    margin-bottom: 20px;
+    font-size: 35px;
+ }
+ section.our-stats .box p {
+    font-size: 45px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+ }
+ section.our-stats .box span i{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-clr);
+    text-transform: capitalize;
+ }
+ /* End Our Stats Section  */
