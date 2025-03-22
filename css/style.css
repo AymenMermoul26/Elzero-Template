@@ -1431,9 +1431,6 @@ footer .container {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;   
 }
-footer .container .social-media {
-    
-}
 
 footer .container .social-media h1 {
     margin: 0;
@@ -1455,29 +1452,42 @@ footer .container .social-media i {
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    color: #a7a7a7;
+    color: #bbbbbb;
     transition: var(--transition-time);
 }
 footer .container .social-media i:hover {
 background-color: var(--main-clr);
 }
 footer .container .social-media p {
-    color: #777;
+    color: #bbbbbb;
     font-size: 16px;
     line-height: 2;
 }
-
 footer .container ul li {
-    color: #a7a7a7;
-    padding: 20px;
-    font-size: 18px;
-    position: relative;
+    padding: 20px 0;
+    transition: var(--transition-time);
 }
 footer .container ul li:not(:last-child) {
     border-bottom: 1px solid #a7a7a7;
 }
-footer .container ul li::before {
-    content: '';
-    position: absolute;
+
+footer .container ul li a {
+    display: block;
+    font-size: 18px;
+    color: #bbbbbb;
+    transition: var(--transition-time);
+}
+
+
+footer .container ul li a::before {
+    content: '\f03';
+    font-family: "font awesom 6 free";
+    font-weight: 900;
+    margin-right: 5px;
+    color: var(--main-clr);
+}
+footer .container ul li:hover a {
+    transform: translateX(20px);
+    color: #fff;
 }
 /* End Footer  */
