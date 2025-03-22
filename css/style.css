@@ -1426,11 +1426,17 @@ footer {
     background-color: #161616;
     padding: 70px 0 0 ;
 }
+@media (max-width:767px) {
+    footer {
+        text-align: center;
+    }
+}
 footer .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 40px;   
 }
+
 
 footer .container .social-media h1 {
     margin: 0;
@@ -1442,6 +1448,11 @@ footer .container .social-media h1 {
 footer .container .social-media .acounts {
     display: flex;
     margin: 0 0 20px 0;
+}
+@media (max-width:767px){
+    footer .container .social-media .acounts{
+        justify-content: center;
+    }
 }
 footer .container .social-media i {
     height: 40px;
@@ -1473,7 +1484,7 @@ footer .container ul li:not(:last-child) {
 
 footer .container ul li a {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     color: #bbbbbb;
     transition: var(--transition-time);
 }
@@ -1489,5 +1500,39 @@ footer .container ul li a::before {
 footer .container ul li:hover a {
     transform: translateX(20px);
     color: #fff;
+}
+/* footer .container .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+footer .container .location .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+@media (max-width:767px){
+    footer .container .location .box {
+        flex-direction: column;
+
+    }
+}
+footer .container .location .box i {
+    font-size: 30px;
+    color: var(--main-clr);
+    flex-basis: 53px;
+}
+footer .container .location .box p {
+    color: #a7a7a7;
+    line-height: 1.7;
+    font-size: 16px;
+}
+footer .container .images img{
+    width: 70px;
+    border: 3px solid #fff;
+    margin: 3px;
+}
+footer .made-with {
+    
 }
 /* End Footer  */
