@@ -1319,5 +1319,105 @@ section.events .container .subscibe form input[type='submit']:hover {
  /* End Our Stats Section  */
 
  /* Start Discount Section  */
-
- /* End Discount Section  */
+section.discount  {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width:991px){
+    section.discount {
+        flex-direction: column;
+    }
+}
+section.discount  .image {
+    flex-basis: 50%;
+    background-image: url(../assits/imgs/discount-background1.jpg), url(../assits/imgs/discount-background2.jpg);
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section.discount .image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #01a0eaf6;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+section.discount .discount-container {
+    text-align: center;
+    padding: 0 20px;
+}
+section.discount .discount-container h2 {
+    font-size: 35px;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+section.discount .discount-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 500px;
+}
+section.discount .discount-container img {
+    width: 300px;
+    max-width: 100%;
+}
+section.discount  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    padding-bottom: 50px;
+}
+section.discount  .form .request-container {
+    padding: 0 20px;
+    text-align: center;
+}
+section.discount .form .request-container h2 {
+    font-size: 40px;
+    letter-spacing: -2px;
+    text-transform: capitalize;
+    margin: 40px 0;
+}
+section.discount .form .request-container form input:not(input[type = 'button']) {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #777;
+    padding: 13px;
+    background-color: #f6f6f6;
+}
+section.discount .form .request-container form input:focus {
+    outline: none;
+}
+section.discount .form .request-container form textarea {
+    height: 200px;
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid #777;
+    padding: 13px;
+    background-color: #f6f6f6;
+}
+section.discount .form .request-container form input[type = 'button' ] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    text-transform: capitalize;
+    background-color: var(--main-clr);
+    color: #fff;
+    font-weight: bold;
+    transition: background-color var(--transition-time);
+}
+section.discount .form .request-container form input[type='button']:hover {
+    background-color: #0a97ce;
+}
+/* End Discount Section  */
