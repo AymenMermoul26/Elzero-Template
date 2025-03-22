@@ -1421,3 +1421,63 @@ section.discount .form .request-container form input[type='button']:hover {
     background-color: #0a97ce;
 }
 /* End Discount Section  */
+/* Start Footer  */
+footer {
+    background-color: #161616;
+    padding: 70px 0 0 ;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;   
+}
+footer .container .social-media {
+    
+}
+
+footer .container .social-media h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+footer .container .social-media .acounts {
+    display: flex;
+    margin: 0 0 20px 0;
+}
+footer .container .social-media i {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    background-color: #373737;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: #a7a7a7;
+    transition: var(--transition-time);
+}
+footer .container .social-media i:hover {
+background-color: var(--main-clr);
+}
+footer .container .social-media p {
+    color: #777;
+    font-size: 16px;
+    line-height: 2;
+}
+
+footer .container ul li {
+    color: #a7a7a7;
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+}
+footer .container ul li:not(:last-child) {
+    border-bottom: 1px solid #a7a7a7;
+}
+footer .container ul li::before {
+    content: '';
+    position: absolute;
+}
+/* End Footer  */
